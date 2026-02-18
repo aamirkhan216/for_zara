@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Zara 💜</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom right, #2b0033, #4b0082);
+  color: white;
+  text-align: center;
+}
+
+section {
+  padding: 60px 20px;
+}
+
+h1 {
+  font-size: 2.5em;
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 10px violet; }
+  to { text-shadow: 0 0 25px purple; }
+}
+
+button {
+  padding: 15px 30px;
+  font-size: 18px;
+  border: none;
+  border-radius: 30px;
+  background: purple;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: violet;
+  transform: scale(1.1);
+}
+
+.hidden {
+  display: none;
+}
+
+.gallery img {
+  width: 90%;
+  max-width: 300px;
+  margin: 15px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(255,255,255,0.3);
+}
+
+.cake {
+  font-size: 100px;
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+
+footer {
+  margin-top: 40px;
+  font-size: 18px;
+}
+</style>
+</head>
+
+<body>
+
+<section id="apology">
+  <h1>Zara 💜</h1>
+  <p style="max-width:600px;margin:auto;font-size:18px;">
+    My love… I know I didn’t make your birthday feel as special as it should have.  
+    After almost 4 beautiful years together, you deserve the world.  
+    You deserve effort. You deserve thought. You deserve magic.  
+    And I’m sorry I didn’t give you that in the moment.
+    <br><br>
+    But I promise you this — I will always choose you.
+  </p>
+  <br>
+  <button onclick="startBirthday()">Let Me Fix This 💜</button>
+</section>
+
+<section id="birthday" class="hidden">
+  <h1>Happy Birthday Zara 🎂💜</h1>
+  <div class="cake">🎂</div>
+
+  <p style="max-width:600px;margin:auto;font-size:18px;">
+    4 years of dates, laughs, late night talks, memories, and love.
+    Every time we go out together, every time we spend time together,
+    those are my favorite moments of life.
+  </p>
+
+  <h2>Our Beautiful Memories 📸</h2>
+
+  <div class="gallery">
+    <img src="images/zara1.jpg">
+    <img src="images/zara2.jpg">
+    <img src="images/date1.jpg">
+    <img src="images/date2.jpg">
+  </div>
+
+  <footer>
+    I don’t just love you.  
+    I choose you.  
+    Yesterday. Today. Tomorrow. Always. 💜
+  </footer>
+</section>
+
+<script>
+function startBirthday() {
+  document.getElementById("apology").classList.add("hidden");
+  document.getElementById("birthday").classList.remove("hidden");
+}
+</script>
+
+</body>
+</html>
